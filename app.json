@@ -4,23 +4,35 @@
     "slug": "RodasPresas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/ic_launcher.png",
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#3a3738",
+      "androidMode": "default",
+      "androidCollapsedTitle": "n/a"
+    },
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/ic_splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "br.com.bugoffice.rodaspresas",
+      "buildNumber": "1.0.0",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "br.com.bugoffice.rodaspresas",
+      "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/ic_launcher.png"
     }
   }
 }
